@@ -12,4 +12,4 @@ Name, diameter, circumference, distance from sun, and orbital period are provide
 
 Planets with moons have info for their moons printed below their output.
 
-Volume of all planets is summed together and compared with volume of sun. uhijk
+Volume of all planets is summed together and compared with volume of sun.
