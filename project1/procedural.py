@@ -1,4 +1,6 @@
+#procedural.py
 #procedural approach
+
 import json
 from math import pi
 #conversion functions for missing
@@ -27,7 +29,7 @@ def distToOrbit(dist):
     return round(orbit,2)
 
 def calcVolume(diam):
-    volume = 0 #change
+    volume = (4/3)*pi*(diam/2)**3
     return volume
 
 def getSunInfo(data):
@@ -51,11 +53,11 @@ def getPlanetInfo(data, planetNum):
 
     return planName, planDist, planOrbit, planDiam, planCirc, planMoon
 
-#if there are no moons it should say Moons: none, otherwise it says the name, diam, and circ. Moons will be weird tho, figure out last.
+#prints when called and also returns True if there are moons, main() takes advantage of this
 def printPlanetInfo(planets, planetNum):
 
     name, dist, orbit, diam, circ, moon = getPlanetInfo(planets, planetNum)
-    print(f"............\n\nPlanet: {name}\nDistance From Sun: {dist} au\nOrbital Period: {orbit} yr\nDiameter: {diam} km\nCircumference: {circ} km\n")
+    print(f"............\n\nPlanet: {name}\nDiameter: {diam} km\nCircumference: {circ} km\nDistance From Sun: {dist} au\nOrbital Period: {orbit} yr\n")
 
     if moon: return True
     else: return False
@@ -140,16 +142,28 @@ def main():
     with open("JSONPlain.txt", "r") as file:
         data = json.load(file)
 
+    planetVolume = 0
+    sunVolume = calcVolume(getDiam(data))
+
     printSunInfo(data)
     planets = data['Planets']
 
 
-    for i in range(len(data['Planets'])):
+    for i in range(len(planets)):
+        planetVolume += calcVolume(getDiam(planets[i]))
+
+        #this is a bit weird but the condition calls printPlanetInfo which prints all info and also returns True if it has moons, in which case moon info gets printed
         if printPlanetInfo(planets, i):
             moons = planets[i]['Moons']
             for j in range(len(moons)):
                 printMoonInfo(moons, j)
-        
+
+    if(sunVolume > planetVolume):
+        print("Sum of planet's volume is smaller than volume of sun.")
+    else:
+        print("Sum of planet's volume is greater than or equal to that of the sun.")
+
+
 
 
 
