@@ -1,0 +1,54 @@
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: NOT
+
+Enter Hex Value: 0X5
+Result of NOT 0X5 = [1; 1; 1; 1; 1; 0; 1; 0] = 0xFA
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: OR
+
+ Enter first hex value: 0X8
+
+ Enter second hex value: 0X3
+Result of 0X8 OR 0X3 = [0; 0; 0; 0; 1; 0; 1; 1] = 0XB
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: AND
+
+ Enter first hex value: 0X8
+
+ Enter second hex value: 0X3
+Result of 0X8 AND 0X3 = [0; 0; 0; 0; 0; 0; 0; 0] = 0X0
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: AND
+
+ Enter first hex value: 0X3
+
+ Enter second hex value: 0X5
+Result of 0X3 AND 0X5 = [0; 0; 0; 0; 0; 0; 0; 1] = 0X1
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: XOR
+
+ Enter first hex value: 0X8
+
+ Enter second hex value: 0X1
+Result of 0X8 or 0X1 = [0; 0; 0; 0; 1; 0; 0; 1] = 0X9
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: XOR
+
+ Enter first hex value: 0X10
+
+ Enter second hex value: 0X2
+Result of 0X10 or 0X2 = [0; 0; 0; 1; 0; 0; 1; 0] = 0X12
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: XOR
+
+ Enter first hex value: 0X9
+
+ Enter second hex value: 0X5
+Result of 0X9 or 0X5 = [0; 0; 0; 0; 1; 1; 0; 0] = 0XC
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: abc
+
+Invalid input, please type one of the operations listed below exactly as they are written:
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: QUIT
+
+ Quitting Program...
