@@ -1,0 +1,56 @@
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: ADD
+
+ Enter first decimal value: 20
+
+ Enter second decimal value: 5
+Result of 20 PLUS 5 = [0; 0; 0; 1; 1; 0; 0; 1] = 25
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: ADD
+
+ Enter first decimal value: 128
+
+ Enter second decimal value: 128
+Result of 128 PLUS 128 = [0; 0; 0; 0; 0; 0; 0; 0] = 0
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: ADD
+
+ Enter first decimal value: 127
+
+ Enter second decimal value: 1
+Result of 127 PLUS 1 = [1; 0; 0; 0; 0; 0; 0; 0] = -128
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: ADD
+
+ Enter first decimal value: -5
+
+ Enter second decimal value: -5
+Result of -5 PLUS -5 = [1; 1; 1; 1; 0; 1; 1; 0] = -10
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: SUB
+
+ Subtracting n2 from n1, enter n1 as a decimal: -128
+
+ Enter n2 as a decimal: 0
+Result of -128 MINUS 0 = [1; 0; 0; 0; 0; 0; 0; 0] = -128
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: SUB
+
+ Subtracting n2 from n1, enter n1 as a decimal: 10
+
+ Enter n2 as a decimal: 11
+Result of 10 MINUS 11 = [1; 1; 1; 1; 1; 1; 1; 1] = -1
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: SUB
+
+ Subtracting n2 from n1, enter n1 as a decimal: -5
+
+ Enter n2 as a decimal: -5
+Result of -5 MINUS -5 = [0; 0; 0; 0; 0; 0; 0; 0] = 0
+
+Enter Desired Operation: NOT, OR, AND, XOR, ADD, SUB, QUIT: ADD
+
+ Enter first decimal value: 100
+
+ Enter second decimal value: 50
+Result of 100 PLUS 50 = [1; 0; 0; 1; 0; 1; 1; 0] = -106
+
